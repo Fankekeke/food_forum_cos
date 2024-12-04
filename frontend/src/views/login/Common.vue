@@ -8,7 +8,7 @@
               <img src="../../../static/img/logo1.png" style="height: 100px;">
             </a-col>
             <a-col :span="16">
-              <div style="text-align: left;font-size: 23px;margin-bottom: 10px;font-family: SimHei;margin-top: 30px;color: #6f1118">尚卿美食网</div>
+              <div style="text-align: left;font-size: 23px;margin-bottom: 10px;font-family: SimHei;margin-top: 30px;color: #0E65BB">尚卿美食网</div>
             </a-col>
           </a-row>
         </div>
@@ -55,7 +55,7 @@ export default {
     flex-direction: column;
     height: 100vh;
     overflow: auto;
-    background-color: #F0E2E4;
+    background-color: #b6daf5;
     background-repeat: repeat-x, repeat;
     .content {
       padding: 32px 0;

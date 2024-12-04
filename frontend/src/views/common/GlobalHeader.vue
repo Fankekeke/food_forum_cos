@@ -8,7 +8,7 @@
       <a-divider v-if="isMobile" type="vertical" />
       <a-icon v-if="layout === 'side'" class="trigger" :type="collapsed ? 'menu-unfold' : 'menu-fold'" @click="toggleCollapse"/>
       <div v-if="layout === 'head'" class="global-header-menu">
-        <i-menu style="height: 64px; line-height: 64px;background: #6f1118;color: white" class="system-top-menu" :theme="theme" mode="horizontal" :menuData="menuData" @select="onSelect"/>
+        <i-menu style="height: 64px; line-height: 64px;background: #0E65BB;color: white" class="system-top-menu" :theme="theme" mode="horizontal" :menuData="menuData" @select="onSelect"/>
       </div>
       <div :class="['global-header-right', theme]">
           <header-avatar class="header-item"/>
@@ -74,7 +74,7 @@ export default {
     box-shadow: 0 1px 4px rgba(0,21,41,.08);
     position: relative;
     &.light{
-      background: #6f1118;
+      background: #0E65BB;
     }
     &.dark{
       background: #393e46;
