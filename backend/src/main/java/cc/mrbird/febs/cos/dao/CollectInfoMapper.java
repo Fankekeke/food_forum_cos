@@ -19,4 +19,12 @@ public interface CollectInfoMapper extends BaseMapper<CollectInfo> {
 
     // 获取收藏贴子列表
     List<LinkedHashMap<String, Object>> collectInfoByUser(@Param("userId") Integer userId);
+
+    /**
+     * 根据用户获取收藏列表
+     *
+     * @param userId 用户ID
+     * @return 结果
+     */
+    List<LinkedHashMap<String, Object>> selectCollectByUser(@Param("userId") Integer userId);
 }

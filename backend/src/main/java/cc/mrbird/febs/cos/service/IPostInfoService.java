@@ -37,4 +37,36 @@ public interface IPostInfoService extends IService<PostInfo> {
 
     // 推荐贴子
     List<LinkedHashMap<String, Object>> recommend(Integer tagId, List<Long> collectUserIds);
+
+    /**
+     * 根据用户获取贴子信息
+     *
+     * @param userId 用户ID
+     * @return 结果
+     */
+    List<LinkedHashMap<String, Object>> getPostByUser(Integer userId);
+
+    /**
+     * 根据贴子编号获取详细信息
+     *
+     * @param postId 帖子ID
+     * @return 结果
+     */
+    LinkedHashMap<String, Object> getPostInfoById(Integer postId);
+
+    /**
+     * 查询帖子及用户信息
+     *
+     * @param key 关键字
+     * @return 结果
+     */
+    LinkedHashMap<String, Object> querySearch(String key);
+
+    /**
+     * 获取用户及贴子详细信息
+     *
+     * @param userId 用户ID
+     * @return 结果
+     */
+    LinkedHashMap<String, Object> getUserPostDetail(Integer userId);
 }

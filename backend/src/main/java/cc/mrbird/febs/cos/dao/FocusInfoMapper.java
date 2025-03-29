@@ -19,4 +19,12 @@ public interface FocusInfoMapper extends BaseMapper<FocusInfo> {
 
     // 查询关注人信息
     List<LinkedHashMap<String, Object>> focusInfoByUser(@Param("userId") Integer userId);
+
+    /**
+     * 根据用户获取关注用户
+     *
+     * @param userId 用户ID
+     * @return 结果
+     */
+    List<LinkedHashMap<String, Object>> selectFocusByUser(@Param("userId") Integer userId);
 }

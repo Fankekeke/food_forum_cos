@@ -19,4 +19,12 @@ public interface IReplyInfoService extends IService<ReplyInfo> {
 
     // 获取具体的帖子回复信息
     List<LinkedHashMap<String, Object>> replyListByPostId(Integer postId);
+
+    /**
+     * 获取用户回复信息
+     *
+     * @param userId 用户ID
+     * @return 结果
+     */
+    List<LinkedHashMap<String, Object>> replyListByUserId(Integer userId);
 }

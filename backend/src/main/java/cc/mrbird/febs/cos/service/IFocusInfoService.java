@@ -19,4 +19,22 @@ public interface IFocusInfoService extends IService<FocusInfo> {
 
     // 查询关注人信息
     List<LinkedHashMap<String, Object>> focusInfoByUser(Integer userId);
+
+    /**
+     * 根据用户获取关注用户
+     *
+     * @param userId 用户ID
+     * @return 结果
+     */
+    List<LinkedHashMap<String, Object>> selectFocusByUser(Integer userId);
+
+    /**
+     * 关注/取关 用户
+     *
+     * @param userId      用户ID
+     * @param focusUserId 关注用户ID
+     * @param type        操作 1.关注 2.取关
+     * @return 结果
+     */
+    Boolean focusUser(Integer userId, Integer focusUserId, Integer type);
 }
